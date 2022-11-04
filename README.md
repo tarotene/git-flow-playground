@@ -112,7 +112,16 @@ Git-flow CLI ツールを用いてブランチを並行に編集し取り込む�
 
     - ここでの取り込みは，まずローカルでトピックブランチを `develop` に取り込み，その結果をリモートにミラーリングするイメージ．
     - PR が approve される前に `git flow feature finish append-description` を行うと詰むバグが存在する．
+    - レビュアーとレビュイーの役割をよく整理しておく必要がある．
 
 ### リリース
 
 > 作成途中．
+
+## Misc
+
+- Issue のテンプレ化
+- PR の作成自動化・テンプレ化
+- Release note や Change log の作成自動化
+
+についても触れる．自動化は一旦 Github Actions ありきで考える．

@@ -130,5 +130,6 @@ Git-flow CLI ツールを用いてブランチを並行に編集し取り込む�
 - Issue のテンプレ化
 - PR の作成自動化・テンプレ化
 - Release note や Change log の作成自動化
+- master と develop の差分解消
 
 についても触れる．自動化は一旦 Github Actions ありきで考える．

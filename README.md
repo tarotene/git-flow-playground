@@ -106,11 +106,10 @@ Git-flow CLI ツールを用いてブランチを並行に編集し取り込む�
 5. PR が approved であることを確認し，`develop` への取り込みを実施．
 
     ```bash
-    git flow feature finish append-description
-    git push --all
+    git flow feature finish append-description && git push --all
     ```
 
-    - ここでの取り込みは，まずローカルでトピックブランチを `develop` に取り込み，その結果をリモートにミラーリングするイメージ．
+    - ここでの取り込みは，まずローカルでトピックブランチを `develop` に取り込み，その結果をリモートにミラーリングするイメージ．オプション `--all` が付いていることで，対象となるトピックブランチ以外の追従状況に異常があればそれをエラーとして検知，弾いてくれる（とはいえ `--all` は push merged 可能なブランチが `1` つでもあれば個別に push をトライする模様）．
     - PR が approve される前に `git flow feature finish append-description` を行うと詰むバグが存在する．
     - レビュアーとレビュイーの役割をよく整理しておく必要がある．
 
